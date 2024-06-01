@@ -4,7 +4,7 @@
     "lib": ["es2023"],
     // Transpile to commonjs modules for node
     "module": "CommonJS",
-    // Don't emit; allow Babel to transform files
+    // Don't emit; allow SWC to transform files
     "strict": true,
     "noEmit": true,
     "moduleResolution": "node",
