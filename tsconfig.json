@@ -1,15 +1,22 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
-    "target": "ES2022",
-    "lib": ["es2023"],
-    // Transpile to commonjs modules for node
+    "target": "ES2024",
+    "lib": ["ES2024"],
+    "moduleResolution": "node",
     "module": "CommonJS",
     // Don't emit; allow SWC to transform files
+    "allowJs": true,
+    "checkJs": true,
     "strict": true,
     "noEmit": true,
-    "moduleResolution": "node",
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/"]
+    }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

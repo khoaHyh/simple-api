@@ -1,3 +1,4 @@
+import { describe, it, expect } from "vitest";
 import { HelloWorld } from "../services/hello_world";
 
 describe("test_class.ts", () => {

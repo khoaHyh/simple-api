@@ -1,0 +1,21 @@
+packages:
+  - '.'
+
+# Public hoist pattern - packages that should be hoisted to root node_modules
+public-hoist-pattern:
+  - '*eslint*'
+  - '*prettier*'
+  - '@types/*'
+
+# Ignore built dependencies that cause issues with different architectures/platforms
+ignore-built-dependencies:
+  - '@swc/core'
+  - '@swc/core-*'
+  - 'esbuild'
+  - 'rollup'
+
+# Use strict peer dependencies
+strict-peer-dependencies: false
+
+# Shamefully hoist to avoid module resolution issues
+shamefully-hoist: false
