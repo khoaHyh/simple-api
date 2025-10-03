@@ -10,18 +10,26 @@
   "scripts": {
     "start": "nodemon --exec node -r @swc-node/register src/server.ts",
     "cli:hello": "node -r @swc-node/register src/run.ts",
-    "test": "TZ=UTC NODE_ENV=test vitest --run"
+    "test": "TZ=UTC NODE_ENV=test vitest --run",
+    "tsc": "tsc --noEmit",
+    "lint": "eslint --ext .js,.ts --ignore-pattern=coverage ."
   },
   "devDependencies": {
+    "@eslint/eslintrc": "3.3.1",
     "@swc-node/register": "1.10.10",
-    "@swc/core": "1.11.31",
+    "@swc/core": "1.13.5",
     "@types/express": "5.0.3",
     "@types/node": "24.0.0",
+    "@typescript-eslint/eslint-plugin": "8.45.0",
+    "@vitest/eslint-plugin": "1.3.13",
+    "eslint": "9.36.0",
+    "eslint-plugin-unused-imports": "4.2.0",
     "nodemon": "3.1.7",
     "typescript": "5.8.3",
     "vitest": "3.2.4"
   },
   "dependencies": {
+    "@typescript-eslint/parser": "^8.45.0",
     "express": "5.1.0",
     "vite-tsconfig-paths": "5.1.4"
   }
