@@ -1,6 +1,6 @@
-import { HelloWorld } from "./services/hello_world";
+import { $HelloWorld } from "./singletons";
 
-const instance = new HelloWorld();
+const instance = $HelloWorld;
 
 console.log("===============================");
 console.log(instance.sayHello());
