@@ -10,6 +10,7 @@
   "scripts": {
     "start": "nodemon --exec node -r @swc-node/register src/server.ts",
     "cli:hello": "node -r @swc-node/register src/run.ts",
+    "cli:script": "node -r @swc-node/register src/scripts/script.ts",
     "test": "TZ=UTC NODE_ENV=test vitest --run",
     "tsc": "tsc --noEmit",
     "lint": "eslint --ext .js,.ts --ignore-pattern=coverage ."
